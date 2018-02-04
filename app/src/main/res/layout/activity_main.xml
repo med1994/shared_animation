@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="mohamed.com.sharedanimation.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:transitionName="logotransition"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/form_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:background="@drawable/form">
+
+        <ImageView
+            android:id="@+id/image_profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:transitionName="imagetransition"
+            android:src="@drawable/image_background" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_profil"
+            android:text="Mbarki Mohamed"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:transitionName="nametransition"
+            />
+
+        <TextView
+            android:id="@+id/txt_detail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_text"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_profil"
+            android:text="I m very happy to use this application"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:transitionName="detailTransiton"
+
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:text="click the cader to open the profil" />
+
+</RelativeLayout>
